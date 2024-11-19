@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- ======= Departments Section ======= -->
+    {% load static %}
+    <section id="departments" class="departments">
+        <div class="container">
+        
+          <div class="section-title">
+            <h2>Departments</h2>
+            <p>Explore our various specialized departments offering a comprehensive range of medical services</p>
+          </div>
+  
+          <div class="row gy-4">
+            <div class="col-lg-3">
+              <ul class="nav nav-tabs flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-9">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab-1">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Cardiology</h3>
+                      
+                      <p>Our cardiology department is dedicated to the diagnosis and treatment of cardiovascular diseases. Our experienced cardiologists perform a wide range of procedures, including stress tests, echocardiography, and cardiac catheterization. We offer personalized care to manage conditions such as heart disease, hypertension, and arrhythmias.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{% static 'assets/img/departments-1.jpg' %} " alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-2">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Neurology</h3>
+                      <p>Our neurology department specializes in the diagnosis and treatment of disorders affecting the nervous system. From headaches and seizures to stroke and neurodegenerative diseases, our team of neurologists provides expert care using advanced diagnostic techniques and treatment modalities</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{% static 'assets/img/departments-2.jpg' %} " alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-3">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Hepatology</h3>
+                      
+                      <p>Our hepatology department focuses on the diagnosis and treatment of liver diseases and disorders. Our hepatologists are skilled in managing conditions such as hepatitis, cirrhosis, and liver cancer. We offer comprehensive care, including liver function testing, imaging studies, and advanced therapies.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{% static 'assets/img/departments-3.jpg' %} " alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-4">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Pediatrics</h3>
+                      
+                      <p>Our pediatrics department provides specialized healthcare for infants, children, and adolescents. Our pediatricians offer preventive care, vaccinations, and treatment for common childhood illnesses. We emphasize family-centered care and strive to create a welcoming environment for our young patients.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{% static 'assets/img/departments-4.jpg' %} " alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="tab-5">
+                  <div class="row gy-4">
+                    <div class="col-lg-8 details order-2 order-lg-1">
+                      <h3>Eye Care</h3>
+                      
+                      <p>Our eye care department offers comprehensive services for the diagnosis and treatment of eye-related conditions. From routine eye exams to advanced surgical procedures, our ophthalmologists provide personalized care to preserve and enhance vision. We utilize state-of-the-art technology to deliver the highest quality eye care to our patients.</p>
+                    </div>
+                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                      <img src="{% static 'assets/img/departments-5.jpg' %} " alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Departments Section -->
+
+{% endblock %}

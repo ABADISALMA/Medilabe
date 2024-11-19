@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Medilab Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  {% load static %}
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %} " rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %} " rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %} " rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %} " rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">MediCare@gmail.com</a>
+        <i class="bi bi-phone"></i> +212661514131
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </div>
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <h1 class="logo me-auto"><a href="{% url 'hom' %}">MediCare</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul>
+          <li><a class="nav-link active" href="{% url 'hom' %}">Home</a></li>
+          <li><a class="nav-link" href="{% url 'abo' %}">About</a></li>
+          <li><a class="nav-link" href="{% url 'ser' %}">Services</a></li>
+          <li><a class="nav-link" href="{% url 'dep' %}">Departments</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'doctor' %}">Doctors</a></li>
+          </li>
+          <li><a class="nav-link" href="{% url 'con' %}">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+  <a href="{% url 'home' %}" class="appointment-btn"><span class="d-none d-md-inline">log out </span></a>
+  
+  <a href="{% url 'apo' %}" class="appointment-btn"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+  
+  </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1>Welcome to MediCare</h1>
+      <h2>We are the MediCare Group, dedicated to providing quality medical services and promoting the well-being of our patients throughout the kingdom</h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Why Choose MediCare?</h3>
+              <p>MediCare is your ideal choice for quality healthcare, patient-centered approach, and a comprehensive range of medical services. With our trusted reputation and accessibility, we are your reliable partner for dependable and personalized healthcare.</p>
+              <div class="text-center">
+                <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>EXCELLENCE</h4>
+                  <p>At AKDITAL, excellence is reflected in an unwavering pursuit of optimal quality of care, through cutting-edge medical practices and unparalleled patient service.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>ENGAGEMENT</h4>
+                  <p>Our commitment is the promise of unwavering dedication to our patients, our employees, and our community, ensuring responsible and accessible healthcare.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch">
+                <div class="icon-box mt-4 mt-xl-0">
+                  <i class="bx bx-images"></i>
+                  <h4>INNOVATION</h4>
+                  <p>Nurturing creativity and fostering experimentation is fundamental to identifying and adopting the most effective solutions, thereby enhancing our care and deepening our relationships with patients and partners.</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- End .content-->
+        </div>
+      </div>
+
+    </div>
+    </section><!-- End Why Us Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Asked Questions</h2>
+          <p>At MediCare , we understand that our patients may have various questions regarding our services, appointments, and procedures. To provide clarity and ensure that you have all the information you need, we've compiled a list of frequently asked questions below.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What are your clinic's operating hours?
+
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                  Our clinic is open Monday through Friday from 8:00 AM to 6:00 PM, and on Saturdays from 9:00 AM to 1:00 PM. We are closed on Sundays and public holidays.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Do I need to schedule an appointment, or do you accept walk-ins?
+
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  While walk-ins are welcome, we recommend scheduling an appointment to minimize wait times and ensure that you receive the attention you need. You can schedule an appointment through our website or by calling our clinic.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">What types of medical services do you offer?
+
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Our clinic provides a wide range of medical services, including general consultations, vaccinations, specialized consultations, and laboratory examinations. We also offer preventive care and health screenings.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Are your healthcare providers board-certified?
+
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, all our healthcare providers are board-certified and highly experienced in their respective fields. They are dedicated to providing personalized and compassionate care to our patients.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Do you accept health insurance?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Yes, we accept most major health insurance plans. Please check with our front desk staff to confirm if we accept your insurance plan and to verify coverage details.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %} " class="testimonial-img" alt="">
+                  <h3>Dr. Salah alaoui</h3>
+                  <h4>General Practitioner</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Dr. Salah is a passionate general practitioner dedicated to providing comprehensive and compassionate healthcare to her patients. With extensive experience in diagnosing and treating common conditions, Dr. Johnson strives to promote long-term health and well-being in her patients.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %} " class="testimonial-img" alt="">
+                  <h3>wissal fatihi</h3>
+                  <h4>Clinical Nurse</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    wissal fatihi is a dedicated clinical nurse who works closely with physicians to ensure effective care coordination and a positive experience for patients. With a natural empathy and exceptional clinical skills, Emily is a valuable member of our healthcare team.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %} " class="testimonial-img" alt="">
+                  <h3>Meriam bouamri</h3>
+                  <h4>Radiology Technologist</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Meriam bouamri is a highly skilled radiology technologist with expertise in using advanced medical imaging technologies. As a member of our team, Michael ensures accurate and safe imaging procedures to assist physicians in making accurate diagnoses and developing effective treatment plans.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %} " class="testimonial-img" alt="">
+                  <h3>Dr. Samad jabir</h3>
+                  <h4>Cardiology Specialist</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Dr. Samad jabir is a renowned cardiology specialist known for her expertise in diagnosing and managing cardiovascular diseases. With a commitment to clinical excellence and a dedication to the well-being of her patients, Dr. Lewis provides high-quality, personalized care to each individual she treats.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %} " class="testimonial-img" alt="">
+                  <h3>khalid najm</h3>
+                  <h4>Appointment Coordinator</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    khalid najm is our dedicated appointment coordinator, responsible for ensuring that every patient has quick and easy access to our medical services. With her professionalism and attention to detail, Sophie ensures efficient appointment scheduling and a hassle-free experience for our patients.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Explore our image gallery for a visual glimpse into our medical clinic. Discover our modern facilities, dedicated medical team, and satisfied patients. Immerse yourself in the clinic experience through these captivating images.</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-1.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-1.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-2.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-2.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-3.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-3.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-4.jpg' %}" class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-5.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-5.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-6.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-6.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-7.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-7.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'assets/img/gallery/gallery-8.jpg' %} " class="galelry-lightbox">
+                <img src="{% static 'assets/img/gallery/gallery-8.jpg' %} " alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MediCare</h3>
+            <p>
+              Younes Larhrib<br>
+              123 maarif Street<br>
+              Casablanca, 20000<br>
+              Morroco <br><br>
+              <strong>Phone:</strong> +212661514131<br>
+              <strong>Email:</strong> MediCare@gmail.com<br>
+            </p>
+        </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Departments</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">General Medical Consultations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Specialized Consultations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Vaccinations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Laboratory Examinations</a></li>
+            </ul>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>MediCare</span></strong>. All Rights Reserved
+        </div>
+        
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %} "></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %} "></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %} "></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %} "></script>
+
+</body>
+
+</html>

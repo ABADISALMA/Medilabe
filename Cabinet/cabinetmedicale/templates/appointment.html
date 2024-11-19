@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    .container {
+        margin-top: 50px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .loading,
+    .error-message,
+    .sent-message {
+        display: none;
+        margin-top: 10px;
+    }
+
+    .loading:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 3px solid #ccc;
+        border-radius: 50%;
+        border-top-color: #007bff;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .error-message {
+        color: red;
+    }
+
+    .sent-message {
+        color: green;
+    }
+</style>
+
+<section id="appointment" class="appointment section-bg">
+    <div class="container">
+        <div class="section-title">
+            <h2>Make an Appointment</h2>
+            
+        </div>
+        <div class="text-center mt-3">
+            <p><a href="{% url 'list_appointments' %}">non-disposable dates</a></p>
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            
+            <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your appointment request has been sent successfully. Thank you!</div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-block">Make an Appointment</button>
+            </div>
+            
+        </form>
+    </div>
+</section>
+{% endblock %}

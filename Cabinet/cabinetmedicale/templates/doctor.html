@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<!-- ======= Doctors Section ======= -->
+<section id="doctors" class="doctors">
+    <div class="container">
+        <div class="section-title">
+            <h2>Doctors</h2>
+            <p>Our doctors prioritize patient care above all else, taking the time to listen to your concerns, understand your unique medical history, and develop tailored treatment plans to address your needs. Whether you're visiting us for a routine check-up, specialized treatment, or medical advice, you can trust our team to provide comprehensive and compassionate care.</p>
+        </div>
+
+        <div class="row">
+            {% for doctor in doctors %}
+            <div class="col-lg-6 mt-4">
+                <div class="member d-flex align-items-start">
+                    <div class="pic">
+                        <img src="{{ doctor.image.url }}" class="img-fluid" alt="">
+                    </div>
+                    <div class="member-info">
+                        <h4>{{ doctor.nom }} {{ doctor.prenom }}</h4>
+                        <span>{{ doctor.spec }}</span>
+                        <div class="social">
+                            <a href=""><i class="ri-twitter-fill"></i></a>
+                            <a href=""><i class="ri-facebook-fill"></i></a>
+                            <a href=""><i class="ri-instagram-fill"></i></a>
+                            <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section><!-- End Doctors Section -->
+{% endblock %}
